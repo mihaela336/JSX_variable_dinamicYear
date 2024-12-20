@@ -10,14 +10,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-var name = "Mihaela";
-var d = new Date();
-var year = d.getFullYear();
+const name = "Mihaela";
+const currentDate = new Date();
+const year = currentDate.getFullYear();
 
 ReactDOM.render(
   <div>
     <p>Created by {name} </p>
     <p>Copyright {year}</p>
+    // alt <p>Copyright {d.getFullYear()}</p>
   </div>,
   document.getElementById("root")
 );
